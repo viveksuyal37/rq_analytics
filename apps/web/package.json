@@ -9,19 +9,36 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.7",
     "@repo/ui": "*",
-    "react": "19.0.0-rc-f994737d14-20240522",
-    "react-dom": "19.0.0-rc-f994737d14-20240522",
-    "next": "15.0.0-rc.0"
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.435.0",
+    "next": "^14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.49.3",
+    "react-leaflet": "^4.2.1",
+    "react-redux": "^9.1.2",
+    "react-toastify": "^10.0.4",
+    "recharts": "^2.12.7",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
-    "typescript": "^5",
+    "@types/leaflet": "^1.9.12",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.20",
     "eslint": "^8",
-    "eslint-config-next": "15.0.0-rc.0"
+    "eslint-config-next": "15.0.0-rc.0",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5"
   }
 }
