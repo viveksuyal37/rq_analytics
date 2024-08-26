@@ -64,6 +64,7 @@ const CustomerDashboard = () => {
         <RepeatedCustomers params={params} />
         <ValuedCustomers params={params} />
       </div>
+      <h2>note: citywise customer dist is disabled (as it was using window object in server /dist resulting in build errors) , uncomment and run project in dev mode to view it.</h2>
       {/* <CityWiseCustomers params={params} /> */}
     </div>
   );
