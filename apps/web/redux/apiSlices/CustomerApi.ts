@@ -1,4 +1,4 @@
-import { cityLocationMapping } from '../../app/constants/cityLocationMapping';
+import { cityLocationMapping } from '../../constants/cityLocationMapping';
 import { querySchemaT } from '../../types/api.types';
 import { rootApiSlice } from './rootSlice';
 

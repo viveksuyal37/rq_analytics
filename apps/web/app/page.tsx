@@ -1,8 +1,9 @@
-import SalesDashboard from './components/Dashboard';
+'use client';
+import SalesDashboard from './_components/Dashboard';
 
 export default function Home() {
   return (
-    <main className="p-2 flex-grow flex flex-col">
+    <main className="flex flex-col flex-grow p-2">
       <SalesDashboard />
     </main>
   );

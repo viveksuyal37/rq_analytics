@@ -1,5 +1,3 @@
-'use client';
-
 import { useMemo, useState } from 'react';
 import {
   Area,
@@ -27,16 +25,16 @@ const SalesDashboard = () => {
   });
 
   return (
-    <div className="w-full flex-grow h-1 rounded-md border border-gray-300 p-2 overflow-auto ">
-      <div className="flex justify-between items-center">
-        <h2 className="font-bold text-lg">Dashboard</h2>
+    <div className="flex-grow w-full h-1 p-2 overflow-auto border border-gray-300 rounded-md ">
+      <div className="flex items-center justify-between">
+        <h2 className="text-lg font-bold">Dashboard</h2>
         <div className="flex gap-4">
           <select
             value={params.year}
             onChange={e =>
               setParams({ ...params, year: Number(e.target.value) })
             }
-            className="bg-gray-200 rounded-md p-1 text-black"
+            className="p-1 text-black bg-gray-200 rounded-md"
           >
             {/* <option value={''}>choose year</option> */}
             <option value={2023}>2023</option>
@@ -49,7 +47,7 @@ const SalesDashboard = () => {
             onChange={e =>
               setParams({ ...params, frequency: e.target.value as Frequency })
             }
-            className="bg-gray-200 rounded-md p-1 text-black"
+            className="p-1 text-black bg-gray-200 rounded-md"
           >
             {/* <option value={''}>choose frequency</option> */}
             <option value={Frequency.DAILY}>Daily</option>
@@ -82,6 +80,8 @@ const TotalSales = ({ params }: { params: ApiParamsT }) => {
   console.log({ totalSales });
 
   if (isFetching) return <div>Loading...</div>;
+
+  if (!isSuccess) return <div>Error</div>;
 
   return (
     <div className="w-full h-[300px] shadow-md p-4 rounded-md">

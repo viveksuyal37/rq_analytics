@@ -1,8 +1,9 @@
-import CustomerDashboard from './components/Dashboard';
+'use client';
+import CustomerDashboard from './_components/Dashboard';
 
 const page = () => {
   return (
-    <main className="p-2 flex-grow flex flex-col">
+    <main className="flex flex-col flex-grow p-2">
       <CustomerDashboard />
     </main>
   );
